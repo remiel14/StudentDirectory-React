@@ -1,0 +1,135 @@
+ *{
+    margin: 0%;
+    padding: 0%;
+    font-size: medium;
+    font-weight: normal;
+    font-family: popins, sans-serif;
+}
+
+/* Header Styles */
+#headerContainer > h1 {
+    font-size: xx-large;
+    font-weight: bold;
+    color: rgb(8, 234, 250);
+    text-align: center;
+}
+
+#headerContainer > small{
+    font-size: medium;
+    font-weight: lighter;
+    color: rgb(243, 9, 9);
+}
+
+#headerContainer {
+    box-shadow: 0px 0px 10px 0px rgb(0, 0, 0);
+    padding: 30px;
+    border-radius: 12px;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    margin: 30px;
+}
+
+#formContainer {
+    box-shadow: 0px 0px 10px 0px rgb(0, 0, 0);
+    padding: 20px;
+    border-radius: 12px;
+    background-color: rgba(13, 201, 207, 0.637);
+    margin: 20px; 
+}
+
+#formContainer > #studentForm > .input-field {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#formContainer > #studentForm > .input-field > label {
+    font-size: medium;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    margin-bottom: 5px;
+    border: 0caps;
+}
+
+#formContainer > #studentForm > .input-field > input {
+    width: 85%;
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid rgb(0, 0, 0);
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 5px 0px rgb(0, 0, 0);
+}
+
+#formContainer > #studentForm:nth-last-child(1){
+    width: 45%;
+    padding: 40px;
+    border-radius: 30px;
+    border: 1px solid rgb(0, 0, 0);
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 5px 0px rgb(1, 238, 255);
+}
+
+#formContainer button {
+    border-radius: 20px;
+    border: 20px;
+    background-color: rgba(14, 1, 1, 0.932);
+    color: rgba(143, 6, 6, 0.877);
+    font-weight: bold;
+    padding: 10px;
+    margin-top: 10px;
+}
+#listContainer > .list-item{
+    box-shadow: 0px 0px 10px 0px rgb(0, 0, 0);
+    border-radius: 12px;
+    background-color: rgba(0, 0, 0, 0.993);    
+    margin: 30px;
+    padding: 40px;
+
+
+}
+
+#listContainer> .list-item > h2{
+    color: rgb(4, 190, 236);
+    font-weight: bold;
+    border: 5px;
+    border-radius: 20px;
+   margin: auto;
+
+}
+
+#listContainer > .list-item > p{
+    color: rgb(255, 255, 255);
+    
+
+}
+
+#listContainer > .list-item > button{   
+    border-radius: 10px;
+    border: 15px;
+    background-color: rgb(255, 3, 3);
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+#listContainer > .list-item > button:hover{
+    background-color: rgb(0, 0, 0);
+    color: rgb(11, 215, 241);
+    border: 1px solid rgb(15, 179, 201);
+    transition: all 0.3s ease-in-out;
+}
+
+#listContainer{
+    display: flex;
+    grid-template-columns:repeat(12, 1fr);
+}
+
+@media (width <= 320px) {
+    #listContainer{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
