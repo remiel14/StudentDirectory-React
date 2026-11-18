@@ -1,4 +1,5 @@
- *{
+
+*{
     margin: 0%;
     padding: 0%;
     font-size: medium;
@@ -29,6 +30,7 @@
     margin: 30px;
 }
 
+/* Form Container */
 #formContainer {
     box-shadow: 0px 0px 10px 0px rgb(0, 0, 0);
     padding: 20px;
@@ -52,7 +54,8 @@
 }
 
 #formContainer > #studentForm > .input-field > input {
-    width: 85%;
+    width: 100%;
+    box-sizing: border-box;
     padding: 20px;
     border-radius: 15px;
     border: 1px solid rgb(0, 0, 0);
@@ -60,8 +63,10 @@
     box-shadow: 0px 0px 5px 0px rgb(0, 0, 0);
 }
 
+/* Student Form Box */
 #formContainer > #studentForm:nth-last-child(1){
-    width: 45%;
+    width: 100%;
+    box-sizing: border-box;
     padding: 40px;
     border-radius: 30px;
     border: 1px solid rgb(0, 0, 0);
@@ -69,38 +74,45 @@
     box-shadow: 0px 0px 5px 0px rgb(1, 238, 255);
 }
 
+/* Add Student Button */
 #formContainer button {
-    border-radius: 20px;
-    border: 20px;
-    background-color: rgba(14, 1, 1, 0.932);
-    color: rgba(143, 6, 6, 0.877);
+    border-radius: 10px;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-weight: bold;
-    padding: 10px;
+    padding: 12px 25px;
     margin-top: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
 }
+
+#formContainer button:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
+    transform: translateY(-2px);
+}
+
+/* Student List */
 #listContainer > .list-item{
     box-shadow: 0px 0px 10px 0px rgb(0, 0, 0);
     border-radius: 12px;
     background-color: rgba(0, 0, 0, 0.993);    
     margin: 30px;
     padding: 40px;
-
-
 }
 
-#listContainer> .list-item > h2{
+#listContainer > .list-item > h2{
     color: rgb(4, 190, 236);
     font-weight: bold;
     border: 5px;
     border-radius: 20px;
-   margin: auto;
-
+    margin: auto;
 }
 
 #listContainer > .list-item > p{
     color: rgb(255, 255, 255);
-    
-
 }
 
 #listContainer > .list-item > button{   
@@ -120,16 +132,16 @@
     transition: all 0.3s ease-in-out;
 }
 
+/* List Layout */
 #listContainer{
     display: flex;
     grid-template-columns:repeat(12, 1fr);
 }
 
+/* Responsive Design */
 @media (width <= 320px) {
     #listContainer{
         display: flex;
         flex-direction: column;
     }
 }
-
-
